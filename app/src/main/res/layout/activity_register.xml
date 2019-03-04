@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarRegister"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorNewBlue">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textViewTitleRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/imageButtonBackRegisterAccount"
+                android:gravity="center_vertical"
+                android:text="Register account"
+                android:textColor="@color/colorWhite"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/imageButtonBackRegisterAccount"
+                android:layout_width="38dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorNewBlue"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_keyboard_return" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/email" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="No need username, your username generated automatically by ID"
+            android:textColor="@color/colorBlack"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/bg_message"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:paddingLeft="3dp"
+            android:paddingTop="3dp"
+            android:src="@drawable/mail_1" />
+
+        <EditText
+            android:id="@+id/editTextPassRegisterAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/bg_message"
+            android:hint="Your passsword . . . "
+            android:inputType="textPassword"
+            android:paddingLeft="10dp"
+            android:textColor="@color/colorBlack" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonRegisterAndLoginAccount"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/edit_text_search"
+        android:text="Register and login"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite" />
+
+</LinearLayout>

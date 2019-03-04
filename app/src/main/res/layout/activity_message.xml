@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGray"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toobarMessage"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorNewBlue">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/imageButtonBackMessage"
+                android:layout_width="35dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorNewBlue"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_keyboard_return" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="38dp"
+                android:layout_toRightOf="@+id/imageButtonBackMessage"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewMessageFriendConversation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/textViewIdMessage"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="1"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:background="@color/colorGray"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="3dp"
+            android:layout_weight="9"
+            android:background="@color/colorWhite">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerViewMessage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="2dp"
+                android:padding="3dp"></android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:minHeight="38dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editTextMessage"
+                android:layout_width="0dp"
+
+                android:layout_gravity="center_vertical"
+                android:layout_weight="8"
+                android:background="@drawable/edit_text_search"
+                android:backgroundTint="@color/colorWhite"
+                android:hint="Write your messager . . ."
+                android:maxHeight="100dp"
+                android:minHeight="45dp"
+                android:layout_height="wrap_content"
+                android:maxLines="5"
+                android:inputType="textCapSentences|textMultiLine"
+                android:paddingLeft="10dp"
+                android:textColor="@color/colorBlack" />
+
+            <ImageView
+                android:id="@+id/imageViewActionSendMessage"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_image_view_click"
+                android:backgroundTint="@color/colorGray"
+                android:minHeight="45dp"
+                android:paddingBottom="3dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/send" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

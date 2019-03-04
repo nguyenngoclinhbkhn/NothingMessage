@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    android:backgroundTint="@color/colorWhite"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:backgroundTint="@color/colorWhite"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:textColor="@color/colorNewBlue"
+            android:text="Search friend by id"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginLeft="15dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="38dp"
+                    android:layout_marginLeft="5dp"
+                    android:backgroundTint="@color/colorWhite"
+                    android:background="@drawable/bg_message"
+                    android:layout_height="38dp"
+                    android:src="@drawable/logo"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:hint="Your friend's id . . ."
+                    android:layout_marginLeft="15dp"
+                    android:paddingLeft="15dp"
+                    android:inputType="number"
+                    android:id="@+id/editTextTestIdSearch"
+                    android:textColorHint="@color/colorGray"
+                    android:textColor="@color/colorWhite"
+                    android:background="@drawable/bg_message"
+                    android:backgroundTint="@color/colorNewBlue"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/colorWhite"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="@color/colorWhite"
+                android:orientation="horizontal">
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:text="CANCEL"
+                    android:textSize="15dp"
+                    android:gravity="right|center"
+                    android:id="@+id/btnTestCancel"
+                    android:padding="10dp"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorNewBlue"
+                    android:background="@color/colorWhite"
+                    android:backgroundTint="@color/colorWhite"/>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textAllCaps="false"
+                    android:textSize="15dp"
+                    android:gravity="right|center"
+                    android:padding="10dp"
+                    android:id="@+id/btnTestOk"
+                    android:text="OK"
+                    android:textColor="@color/colorNewBlue"
+                    android:backgroundTint="@color/colorWhite"
+                    android:background="@color/colorWhite"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

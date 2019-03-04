@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/colorWhite"
+    android:backgroundTint="@color/colorWhite"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarSearchIdFriend"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorNewBlue">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageViewActionBackResultIdFriend"
+                android:layout_width="38dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_keyboard_return" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@+id/imageViewActionBackResultIdFriend"
+                android:gravity="center_vertical"
+                android:text="Result"
+                android:textColor="@color/colorWhite"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:layout_marginLeft="3dp"
+        android:background="@color/colorGray"
+        android:backgroundTint="@color/colorGray"
+        android:layout_marginRight="3dp"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="3dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearLayoutFriendSearch"
+                android:layout_width="match_parent"
+                android:layout_margin="3dp"
+                android:backgroundTint="@color/colorGray"
+                android:background="@color/colorGray"
+                android:layout_height="match_parent"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="55dp"
+                    android:layout_weight="15">
+
+                    <LinearLayout
+                        android:id="@+id/linear12"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="3">
+
+                        <TextView
+                            android:id="@+id/textViewIdMessageFriendSearched"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_margin="3dp"
+                            android:background="@drawable/bg_information_account"
+                            android:gravity="center"
+                            android:backgroundTint="@color/colorYellow"
+                            android:text="1"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="25dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textViewNotificationMessageSearched"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/linear12"
+                        android:layout_weight="12"
+                        android:gravity="center_vertical"
+                        android:padding="8dp"
+                        android:text=". . ."
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.5"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textViewTimeNotification"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="12:12"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textViewResultFinded"
+                android:layout_width="match_parent"
+                android:layout_margin="3dp"
+                android:layout_height="55dp"
+                android:backgroundTint="@color/colorGray"
+                android:background="@color/colorGray"
+                android:layout_marginTop="3dp"
+                android:gravity="center"
+                android:text="No result found"
+                android:textColor="@color/colorBlack"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

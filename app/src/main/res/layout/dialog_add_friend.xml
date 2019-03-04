@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:backgroundTint="@color/colorWhite"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/colorWhite"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Add friend by id "
+            android:layout_marginLeft="7dp"
+            android:background="@color/colorWhite"
+            android:textColor="@color/colorNewBlue"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@color/colorWhite"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:padding="3dp"
+                android:src="@drawable/logo"/>
+
+            <EditText
+                android:id="@+id/editTextSearchID"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_margin="2dp"
+                android:backgroundTint="@color/colorNewBlue"
+                android:layout_weight="5"
+                android:hint="Your friend's ID . . . "
+                android:background="@drawable/bg_message"
+                android:inputType="number"
+                android:paddingLeft="20dp"
+                android:textSize="18dp"
+                android:textColorHint="@color/colorGray"
+                android:textColor="@color/colorWhite" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

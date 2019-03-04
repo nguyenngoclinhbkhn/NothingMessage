@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/messageSend"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="3dp"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="5dp">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutMessage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="3dp"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewIdAccountMessageSend"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="0dp"
+                android:layout_marginRight="3dp"
+                android:background="@drawable/bg_information_account"
+                android:backgroundTint="@color/colorGray"
+                android:gravity="center"
+                android:text="ID"
+                android:textColor="@color/colorBlack"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/textViewIdAccountMessageSend"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewContentMessageSend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="3dp"
+                    android:background="@drawable/text_view_message"
+                    android:backgroundTint="@color/colorGray"
+                    android:gravity="center_vertical"
+                    android:maxWidth="250dp"
+                    android:padding="8dp"
+                    android:text="ID"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15dp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="0dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageViewSend1"
+                        android:layout_width="18dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_action_tick" />
+
+                    <ImageView
+                        android:id="@+id/imageViewSend2"
+                        android:layout_width="18dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="6dp"
+                        android:src="@drawable/ic_action_tick" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textViewTimeMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:gravity="center"
+            android:text="12:13" />
+    </LinearLayout>
+
+
+</LinearLayout>
